@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="845.0" prefWidth="1279.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionhopital.HelloController">
+   <left>
+      <AnchorPane prefHeight="845.0" prefWidth="412.0" BorderPane.alignment="CENTER" />
+   </left>
+   <right>
+      <AnchorPane prefHeight="917.0" prefWidth="562.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="brandingImageView" fitHeight="905.0" fitWidth="1273.0" layoutX="-714.0" layoutY="6.0" opacity="0.7" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../image/woman-g2446c42e4_1920.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="username" alignment="CENTER" layoutX="-675.0" layoutY="449.0" opacity="0.8" prefHeight="25.0" prefWidth="244.0" promptText="MATRICULE" />
+            <TextField layoutX="-675.0" layoutY="491.0" opacity="0.8" prefHeight="25.0" prefWidth="244.0" />
+            <PasswordField fx:id="password" alignment="CENTER" layoutX="-675.0" layoutY="491.0" opacity="0.8" prefHeight="25.0" prefWidth="243.0" promptText="TELEPHONE" />
+            <Label fx:id="loginMessageLabel" alignment="CENTER" layoutX="-675.0" layoutY="535.0" prefHeight="17.0" prefWidth="247.0" textFill="#d52525" />
+            <Button fx:id="loginButton" layoutX="-675.0" layoutY="560.0" mnemonicParsing="false" onAction="#loginButtonOnAction" opacity="0.8" prefHeight="25.0" prefWidth="253.0" text="Login" />
+            <Button layoutX="-676.0" layoutY="640.0" mnemonicParsing="false" onAction="#cancelButtonAction" opacity="0.8" prefHeight="25.0" prefWidth="255.0" text="cancel" />
+            <Label layoutX="-642.0" layoutY="393.0" text="connectez vous !" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="-691.0" layoutY="199.0" text="Identification Medical Universelle" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="-605.0" layoutY="258.0" text="Votre carnet medicale ou que vous alliez !" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="-658.0" layoutY="285.0" text="Accedez en un clic a l'historique medicale de vos patient , " textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="-624.0" layoutY="312.0" text="grace a lidentification medicale universelle" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="-677.0" layoutY="602.0" mnemonicParsing="false" onAction="#suiteButtonAction" opacity="0.8" prefHeight="25.0" prefWidth="253.0" text="Créer un compte" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>
