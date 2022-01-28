@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="847.0" prefWidth="944.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionhopital.AntecedantController">
+   <children>
+      <AnchorPane layoutX="-12.0" layoutY="-2.0" prefHeight="75.0" prefWidth="956.0">
+         <children>
+            <Label layoutX="416.0" layoutY="20.0" text="Antecedents" textFill="#329ba8">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="idantecedent" layoutX="80.0" layoutY="108.0" prefHeight="25.0" prefWidth="346.0" promptText="ID ANTECEDENT" />
+      <TextField fx:id="idpatient" layoutX="461.0" layoutY="108.0" prefHeight="25.0" prefWidth="393.0" promptText="ID PATIENT" />
+      <Label layoutX="320.0" layoutY="171.0" text="ANTECEDENTS PERSONNELS" underline="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radio1True" layoutX="330.0" layoutY="216.0" mnemonicParsing="false" text="OUI">
+         <toggleGroup>
+            <ToggleGroup fx:id="group1" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radio1False" layoutX="402.0" layoutY="216.0" mnemonicParsing="false" text="NON" toggleGroup="$group1" />
+      <Label layoutX="74.0" layoutY="203.0" prefHeight="43.0" prefWidth="210.0" text="Souffrez Vous de Diabete ?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="246.0" prefHeight="43.0" prefWidth="210.0" text="Souffrez Vous de D' Ulcere ?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="284.0" prefHeight="43.0" prefWidth="255.0" text="Souffrez Vous de d' Insuffisance Renale ?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="322.0" prefHeight="43.0" prefWidth="255.0" text="Souffrez Vous d'Hypertension Arterielle ?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radio2False" layoutX="402.0" layoutY="259.0" mnemonicParsing="false" text="NON">
+         <toggleGroup>
+            <ToggleGroup fx:id="group2" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radio2True" layoutX="330.0" layoutY="259.0" mnemonicParsing="false" prefWidth="42.0" text="OUI" toggleGroup="$group2" />
+      <RadioButton fx:id="radio3True" layoutX="330.0" layoutY="297.0" mnemonicParsing="false" text="OUI">
+         <toggleGroup>
+            <ToggleGroup fx:id="group3" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radio4True" layoutX="330.0" layoutY="335.0" mnemonicParsing="false" text="OUI">
+         <toggleGroup>
+            <ToggleGroup fx:id="group4" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radio4False" layoutX="401.0" layoutY="335.0" mnemonicParsing="false" text="NON" toggleGroup="$group4" />
+      <RadioButton fx:id="radio3False" layoutX="402.0" layoutY="297.0" mnemonicParsing="false" text="NON" toggleGroup="$group3" />
+      <TextArea fx:id="achirurgicaux" layoutX="507.0" layoutY="235.0" prefHeight="173.0" prefWidth="393.0" />
+      <Label layoutX="513.0" layoutY="206.0" text="Antecedants Chirurgicaux">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="aalimentaire" layoutX="57.0" layoutY="478.0" prefHeight="173.0" prefWidth="393.0" />
+      <TextArea fx:id="amedicale" layoutX="510.0" layoutY="478.0" prefHeight="173.0" prefWidth="393.0" />
+      <Label layoutX="57.0" layoutY="450.0" text="Allergies Alimentaires">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="513.0" layoutY="450.0" text="Allergies Medicales">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="addButton" layoutX="179.0" layoutY="707.0" mnemonicParsing="false" onAction="#addRegister" prefHeight="35.0" prefWidth="68.0" style="-fx-background-color: #329ba8;" text="ADD" textFill="WHITE" />
+      <Button fx:id="emptyButton" layoutX="624.0" layoutY="707.0" mnemonicParsing="false" onAction="#clear" prefHeight="35.0" prefWidth="68.0" style="-fx-background-color: #329ba8;" text="CLEAR" textFill="WHITE" />
+      <Button fx:id="UpdateButton" layoutX="338.0" layoutY="707.0" mnemonicParsing="false" onAction="#updateRegister" prefHeight="35.0" prefWidth="68.0" style="-fx-background-color: #329ba8;" text="UPDATE" textFill="WHITE" />
+      <Button fx:id="DelateButton" layoutX="483.0" layoutY="707.0" mnemonicParsing="false" onAction="#delateRgister" prefHeight="35.0" prefWidth="68.0" style="-fx-background-color: #329ba8;" text="DELETE" textFill="WHITE" />
+      <Label layoutX="74.0" layoutY="361.0" prefHeight="43.0" prefWidth="210.0" text="Souffrez Vous de D' Asthme ?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="radio5True" layoutX="330.0" layoutY="374.0" mnemonicParsing="false" text="OUI">
+         <toggleGroup>
+            <ToggleGroup fx:id="group5" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="radio5False" layoutX="402.0" layoutY="374.0" mnemonicParsing="false" text="NON" toggleGroup="$group5" />
+      <Button fx:id="DelateButton1" layoutX="404.0" layoutY="779.0" mnemonicParsing="false" onAction="#rechargeListe" prefHeight="35.0" prefWidth="91.0" style="-fx-background-color: #329ba8;" text="CONSULTER" textFill="WHITE" />
+   </children>
+</AnchorPane>
