@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="847.0" prefWidth="958.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionhopital.GestionDesAgentController">
+   <children>
+      <AnchorPane layoutX="-5.0" prefHeight="75.0" prefWidth="962.0">
+         <children>
+            <Label layoutX="383.0" layoutY="20.0" text="Gestion Des Agents" textFill="#329ba8">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="idAgentTextField" layoutX="184.0" layoutY="192.0" prefHeight="35.0" prefWidth="226.0" promptText="ID AGENT" />
+      <TextField fx:id="nomAgentTextField" layoutX="184.0" layoutY="241.0" prefHeight="35.0" prefWidth="226.0" promptText="NOMS" />
+      <TextField fx:id="prenomAgentTextField" layoutX="184.0" layoutY="289.0" prefHeight="35.0" prefWidth="226.0" promptText="PRENOMS" />
+      <TextField fx:id="specialiteAgentTextField" layoutX="568.0" layoutY="241.0" prefHeight="35.0" prefWidth="226.0" promptText="SPECIALITE" />
+      <TextField fx:id="telephoneAgentTextField" layoutX="568.0" layoutY="194.0" prefHeight="35.0" prefWidth="226.0" promptText="TELEPHONE" />
+      <TextField fx:id="lieuAgentTextField" layoutX="568.0" layoutY="289.0" prefHeight="35.0" prefWidth="226.0" promptText="LIEU D' INTERVENTION" />
+      <Button fx:id="addButton" layoutX="193.0" layoutY="411.0" mnemonicParsing="false" onAction="#addRegister" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #329ba8;" text="Add" textFill="WHITE" />
+      <Button fx:id="DelateButton" layoutX="346.0" layoutY="411.0" mnemonicParsing="false" onAction="#delateRegisterOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #329ba8;" text="Delete" textFill="WHITE" />
+      <Button fx:id="UpdateButton" layoutX="485.0" layoutY="411.0" mnemonicParsing="false" onAction="#updateRegister" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #329ba8;" text="Update" textFill="WHITE" />
+      <Button fx:id="emptyButton" layoutX="620.0" layoutY="411.0" mnemonicParsing="false" onAction="#emptyLableOnAction" prefHeight="25.0" prefWidth="63.0" style="-fx-background-color: #329ba8;" text="Empty" textFill="WHITE" />
+      <TableView fx:id="tableViewElement" layoutX="9.0" layoutY="487.0" prefHeight="350.0" prefWidth="935.0">
+        <columns>
+          <TableColumn fx:id="idColum" prefWidth="111.0" text="idAgent" />
+          <TableColumn fx:id="nomColum" prefWidth="162.0" text="nomAgent" />
+            <TableColumn fx:id="prenomColum" prefWidth="157.0" text="prenomAgent" />
+            <TableColumn fx:id="specialiteColum" prefWidth="218.0" text="specialite" />
+            <TableColumn fx:id="telephoneColum" prefWidth="139.0" text="telephone" />
+            <TableColumn fx:id="lieuColum" prefWidth="179.0" text="lieu d'intervention" />
+        </columns>
+      </TableView>
+      <Button layoutX="735.0" layoutY="411.0" mnemonicParsing="false" onAction="#refreshRegisterOnAction" prefWidth="63.0" style="-fx-background-color: #329ba8;" text="Refresh" textFill="WHITE" />
+      <Button fx:id="searchButton" layoutX="652.0" layoutY="111.0" mnemonicParsing="false" onAction="#searchRegisterOnAction" prefWidth="63.0" style="-fx-background-color: #329ba8;" text="Search" textFill="WHITE" />
+      <TextField fx:id="searchFieldLable" layoutX="397.0" layoutY="111.0" prefHeight="25.0" prefWidth="226.0" promptText="Search" />
+   </children>
+</AnchorPane>
